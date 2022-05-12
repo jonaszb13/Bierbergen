@@ -9,15 +9,27 @@ html, body {
 
 header {
     width: 100%;
-    height: 100px;
+    height: 150px;
     position: fixed;
-    background: lightgrey;
+    background: #f3f5f7;
     top: 0;
     bottom: 0;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
 }
 
 #logo {
     margin: auto;
+}
+
+#logo a img {
+    width: 50px;
+    margin-top: 10px;
+}
+
+hr {
+    margin: auto;
+    width: 1000px;
+    border: 1px solid #1F271B;
 }
 
 .fa fa-bars {
@@ -41,6 +53,10 @@ nav ul a li {
     float: left;
     position: relative;
     margin-left: 50px;
+    color: #F46036;
+    font-family: 'Oswald',sans-serif;
+    font-size: 30px;
+    margin-top: 30px;
 }
 
 #navfirstChild {
@@ -55,7 +71,7 @@ section {
 
 #home {
     min-height: 100%;
-    background-color: aqua;
+    background-color: #eceff1;
 }
 
 .slideshow-container * {
