@@ -82,20 +82,20 @@ section {
     color: #68A357
 }
 
-.slideshow-container * {
+#home .slideshow-container * {
     box-sizing: border-box;
 }
 
-.mySlides {
+#home .slideshow-container .mySlides {
     display: none;
 }
 
-.slideshow-container img {
+#home .slideshow-container img {
     vertical-align: middle;
 }
 
 /* Slideshow container */
-.slideshow-container {
+#home .slideshow-container {
     max-width: 700px;
     position: relative;
     margin: auto;
@@ -103,7 +103,7 @@ section {
 }
 
 /* Caption text */
-.text {
+#home .slideshow-container .mySlides .text {
     color: #f2f2f2;
     font-size: 15px;
     padding: 8px 12px;
@@ -114,7 +114,7 @@ section {
 }
 
 /* Number text (1/3 etc) */
-.numbertext {
+#home .slideshow-container .mySlides .numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
@@ -153,43 +153,95 @@ section {
     }
 }
 
-.containers {
+#home .containers {
     margin-top: 4%;
     float: left;
     transform: translate(30%, 0%);
     margin-right: 30%;
 }
 
-.news {
-    background: aqua;
+#home .containers .news {
     width: 380px;
     height: 300px;
     float: left;
     margin-right: 20px;
 }
+#home .containers .news h1 {
+    margin-top: 0%;
+    padding-top: 2%;
+    color: #68A357;
+    margin-bottom: 0%;
+}
+#home .containers .news hr {
+    max-width: 140px;
+}
+#home .containers .news img {
+    max-width: 100%;
+    height: 190px;
+    margin-top: 20px;
+}
 
-.wissenwertes {
-    background: red;
+#home .containers .wissenwertes {
     width: 380px;
     height: 300px;
     float: left;
     margin-right: 20px;
 }
+#home .containers .wissenwertes h1 {
+    margin-top: 0%;
+    padding-top: 2%;
+    color: #68A357;
+    margin-bottom: 0%;
+}
+#home .containers .wissenwertes hr {
+    max-width: 140px;
+}
+#home .containers .wissenwertes img {
+    max-width: 100%;
+    height: 190px;
+    margin-top: 20px;
+}
 
-.vereine {
-    background: gold;
+#home .containers .vereine {
     width: 380px;
     height: 300px; 
     float: left;
     margin-right: 20px;
 }
+#home .containers .vereine h1 {
+    margin-top: 0%;
+    padding-top: 2%;
+    color: #68A357;
+    margin-bottom: 0%;
+}
+#home .containers .vereine hr {
+    max-width: 140px;
+}
+#home .containers .vereine img {
+    max-width: 100%;
+    height: 190px;
+    margin-top: 20px;
+}
 
-.ortsleben {
-    background: blueviolet;
+#home .containers .ortsleben {
     width: 380px;
     height: 300px;
     float: left;
     margin-right: 20px;
+}
+#home .containers .ortsleben h1 {
+    margin-top: 0%;
+    padding-top: 2%;
+    color: #68A357;
+    margin-bottom: 0%;
+}
+#home .containers .ortsleben hr {
+    max-width: 140px;
+}
+#home .containers .ortsleben img {
+    max-width: 100%;
+    height: 190px;
+    margin-top: 20px;
 }
 
 
