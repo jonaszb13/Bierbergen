@@ -28,6 +28,12 @@ header {
     transition: top 0.3s;
 }
 
+#header hr {
+    margin: auto;
+    width: 1000px;
+    border: 1px solid #1F271B;
+}
+
 #logo {
     margin: auto;
 }
@@ -35,12 +41,6 @@ header {
 #logo a img {
     width: 50px;
     margin-top: 10px;
-}
-
-hr {
-    margin: auto;
-    width: 1000px;
-    border: 1px solid #1F271B;
 }
 
 .fa fa-bars {
@@ -88,7 +88,7 @@ section {
 
 #home h1 {
     padding-top: 8%;
-    font-size: 50px;
+    font-size: 60px;
     font-family: 'Rubik', sans-serif;
     color: #68A357
 }
@@ -178,14 +178,18 @@ section {
     margin-right: 20px;
     overflow: hidden;
 }
-#home .containers .news h1 {
+#home .containers .news h2 {
     margin-top: 0%;
     padding-top: 2%;
     color: #68A357;
     margin-bottom: 0%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
 }
 #home .containers .news hr {
     max-width: 140px;
+    margin: auto;
+    border: 1px solid #1F271B;
 }
 #home .containers .news img {
     max-width: 100%;
@@ -207,14 +211,18 @@ section {
     margin-right: 20px;
     overflow: hidden;
 }
-#home .containers .wissenwertes h1 {
+#home .containers .wissenwertes h2 {
     margin-top: 0%;
     padding-top: 2%;
     color: #68A357;
     margin-bottom: 0%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
 }
 #home .containers .wissenwertes hr {
     max-width: 140px;
+    margin: auto;
+    border: 1px solid #1F271B;
 }
 #home .containers .wissenwertes img {
     max-width: 100%;
@@ -236,14 +244,18 @@ section {
     margin-right: 20px;
     overflow: hidden;
 }
-#home .containers .vereine h1 {
+#home .containers .vereine h2 {
     margin-top: 0%;
     padding-top: 2%;
     color: #68A357;
     margin-bottom: 0%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
 }
 #home .containers .vereine hr {
     max-width: 140px;
+    margin: auto;
+    border: 1px solid #1F271B;
 }
 #home .containers .vereine img {
     max-width: 100%;
@@ -265,14 +277,18 @@ section {
     margin-right: 20px;
     overflow: hidden;
 }
-#home .containers .ortsleben h1 {
+#home .containers .ortsleben h2 {
     margin-top: 0%;
     padding-top: 2%;
     color: #68A357;
     margin-bottom: 0%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
 }
 #home .containers .ortsleben hr {
     max-width: 140px;
+    margin: auto;
+    border: 1px solid #1F271B;
 }
 #home .containers .ortsleben img {
     max-width: 100%;
@@ -290,25 +306,43 @@ section {
 
 #news {
     min-height: 100%;
-    background-color: rebeccapurple;
+    background-color: #eceff1;
 }
 
-#news .news1{
-    width: 500px;
-    height: 600px;
-    margin-left: 5%;
-    margin-top: 5%;
+#news h1 {
+    padding-top: 1%;
+    font-size: 60px;
+    font-family: 'Rubik', sans-serif;
+    color: #68A357
 }
 
-#news .news1 img {
-    width: 300px;
+#news .newsContainer1 {
+    margin-top: 6%;
+    transform: translate(-50%, 0%);
     float: left;
-    margin-right: 10px;
+    margin-left: 50%;
 }
 
-#news .news1 p {
-    font-size: 20px;
-    text-align: left;
+#news .newsContainer2 {
+    margin-top: 6%;
+    transform: translate(-50%, 0%);
+    float: left;
+    margin-left: 50%;
+}
+
+#news .news {
+    width: 400px;
+    height: 500px;
+    float: left;
+}
+#news .news img {
+    width: 300px;
+}
+#news .news h2 {
+    font-size: 40px;
+    margin-top: 1%;
+    font-family: 'Rubik', sans-serif;
+    color: #68A357;
 }
 
 
