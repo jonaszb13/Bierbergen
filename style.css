@@ -1,0 +1,320 @@
+<<<<<<< HEAD
+=======
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+header {
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    background: #f3f5f7;
+    top: 0;
+    bottom: 0;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
+    z-index: 1;
+    transition: top 0.3s;
+}
+
+#logo {
+    margin: auto;
+}
+
+#logo a img {
+    width: 50px;
+    margin-top: 10px;
+}
+
+hr {
+    margin: auto;
+    width: 1000px;
+    border: 1px solid #1F271B;
+}
+
+.fa fa-bars {
+    display: none;
+}
+
+nav ul {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin-top: 15px;
+}
+
+nav ul a {
+    text-decoration: none !important;
+}
+
+nav ul a li {
+    list-style: none;
+    display: flex;
+    float: left;
+    position: relative;
+    margin-left: 50px;
+    color: #F46036;
+    font-family: 'Oswald',sans-serif;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+#navfirstChild {
+    margin-left: 0;
+}
+
+
+section {
+    min-height: 100%;
+}
+
+
+#home {
+    min-height: 100%;
+    background-color: #eceff1;
+}
+
+#home h1 {
+    padding-top: 8%;
+    font-size: 50px;
+    font-family: 'Rubik', sans-serif;
+    color: #68A357
+}
+
+#home .slideshow-container * {
+    box-sizing: border-box;
+}
+
+#home .slideshow-container .mySlides {
+    display: none;
+}
+
+#home .slideshow-container img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+#home .slideshow-container {
+    max-width: 700px;
+    position: relative;
+    margin: auto;
+    margin-top: 2%;
+}
+
+/* Caption text */
+#home .slideshow-container .mySlides .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+#home .slideshow-container .mySlides .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+#home .containers {
+    margin-top: 4%;
+    float: left;
+    transform: translate(30%, 0%);
+    margin-right: 30%;
+}
+
+#home .containers .news {
+    width: 380px;
+    height: 300px;
+    float: left;
+    margin-right: 20px;
+    overflow: hidden;
+}
+#home .containers .news h1 {
+    margin-top: 0%;
+    padding-top: 2%;
+    color: #68A357;
+    margin-bottom: 0%;
+}
+#home .containers .news hr {
+    max-width: 140px;
+}
+#home .containers .news img {
+    max-width: 100%;
+    height: 190px;
+    margin-top: 20px;
+    transition: transform 0.75s, filter 0.3s ease-in-out;
+    filter: brightness(70%);
+    transform-origin: center center;
+}
+#home .containers .news img:hover {
+    transform: scale(1.15);
+    filter: brightness(100%);
+}
+
+#home .containers .wissenwertes {
+    width: 380px;
+    height: 300px;
+    float: left;
+    margin-right: 20px;
+    overflow: hidden;
+}
+#home .containers .wissenwertes h1 {
+    margin-top: 0%;
+    padding-top: 2%;
+    color: #68A357;
+    margin-bottom: 0%;
+}
+#home .containers .wissenwertes hr {
+    max-width: 140px;
+}
+#home .containers .wissenwertes img {
+    max-width: 100%;
+    height: 190px;
+    margin-top: 20px;
+    transition: transform 0.75s, filter 0.3s ease-in-out;
+    filter: brightness(70%);
+    transform-origin: center center;
+}
+#home .containers .wissenwertes img:hover {
+    transform: scale(1.15);
+    filter: brightness(100%);
+}
+
+#home .containers .vereine {
+    width: 380px;
+    height: 300px; 
+    float: left;
+    margin-right: 20px;
+    overflow: hidden;
+}
+#home .containers .vereine h1 {
+    margin-top: 0%;
+    padding-top: 2%;
+    color: #68A357;
+    margin-bottom: 0%;
+}
+#home .containers .vereine hr {
+    max-width: 140px;
+}
+#home .containers .vereine img {
+    max-width: 100%;
+    height: 190px;
+    margin-top: 20px;
+    transition: transform 0.75s, filter 0.3s ease-in-out;
+    filter: brightness(70%);
+    transform-origin: center center;
+}
+#home .containers .vereine img:hover {
+    transform: scale(1.15);
+    filter: brightness(100%);
+}
+
+#home .containers .ortsleben {
+    width: 380px;
+    height: 300px;
+    float: left;
+    margin-right: 20px;
+    overflow: hidden;
+}
+#home .containers .ortsleben h1 {
+    margin-top: 0%;
+    padding-top: 2%;
+    color: #68A357;
+    margin-bottom: 0%;
+}
+#home .containers .ortsleben hr {
+    max-width: 140px;
+}
+#home .containers .ortsleben img {
+    max-width: 100%;
+    height: 190px;
+    margin-top: 20px;
+    transition: transform 0.75s, filter 0.3s ease-in-out;
+    filter: brightness(70%);
+    transform-origin: center center;
+}
+#home .containers .ortsleben img:hover {
+    transform: scale(1.15);
+    filter: brightness(100%);
+}
+
+
+#news {
+    min-height: 100%;
+    background-color: rebeccapurple;
+}
+
+#wissenwertes {
+    min-height: 100%;
+    background-color: green;
+}
+
+#vereine {
+    min-height: 100%;
+    background-color: burlywood;
+}
+
+#ortsleben {
+    min-height: 100%;
+    background-color: blue;
+}
+
+#kontakt {
+    min-height: 100%;
+    background-color: red;
+}   
+
+>>>>>>> 4b73c69096d3b3c0897c39425512e8d2c969bd42

@@ -1,12 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Oswald:500|Rubik:300&amp;display=swap" rel="stylesheet">
+    <title>Bierbergen</title>
 </head>
+
 <body>
+
+    <!--Header---------------------------------------------->
+
+    <header id="header">
+        <div id="logo">
+            <a href="#">
+                <img src="img/Wappen_Bierbergen.png" alt="Logo">
+            </a>
+        </div>
+
+        <hr>
+        
+        <nav id="main-nav">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <ul>
+                <a class="link" href="#home">
+                    <li id="navfirstChild">Home</li>
+                </a>
+                <a class="link" href="#news">
+                    <li>News</li>
+                </a>
+                <a class="link" href="#wissenwertes">
+                    <li>Wissenwertes</li>
+                </a>
+                <a class="link" href="#vereine">
+                    <li>Vereine</li>
+                </a>
+                <a class="link" href="#ortsleben">
+                    <li>Ortsleben</li>
+                </a>
+                <a class="link" href="#kontakt">
+                    <li>Kontakt</li>
+                </a>
+            </ul>
+        </nav>
+
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function () {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("header").style.top = "0";
+                } else {
+                    document.getElementById("header").style.top = "-150px";
+                }
+                prevScrollpos = currentScrollPos;
+            }
+        </script>
+    </header>
+
+
+    <!--Landing Page---------------------------------------------->
+
+    <section id="home">
+        <h1>Willkommen in Bierbergen</h1>
+        
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img/Kirche.jpg" style="width:100%;height: 400px;" alt="img1">
+                <div class="text">Kirche</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/Dorfplatz.jpg" style="width:100%;height: 400px;" alt="img2">
+                <div class="text">Dorfplatz</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/Ortsschild.jpg" style="width:100%;height: 400px" alt="img3">
+                <div class="text">Ortseingang</div>
+            </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <script>
+                let slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) { slideIndex = 1 }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                    setTimeout(showSlides, 5000); // Change image every 2 seconds
+                }
+            </script>
+
+        </div>
+
+        <div class="containers">
+            <div class="news">
+                <a href="#news">
+                    <h1>News</h1>
+                    <hr>
+                    <img src="img/ortsschild-news.jpg" alt="news img">
+                </a>
+            </div>
+        
+            <div class="wissenwertes">
+                <a href="#wissenwertes">
+                    <h1>Wissenwertes</h1>
+                    <hr>
+                    <img src="img/Kirche-wissenwertes.jpg" alt="wissenwertes img">
+                </a>
+            </div>
+        
+            <div class="vereine">
+                <a href="#vereine">
+                    <h1>Vereine</h1>
+                    <hr>
+                    <img src="img/Sportplatz.jpg" alt="vereine img">
+                </a>
+            </div>
+        
+            <div class="ortsleben">
+                <a href="#ortsleben">
+                    <h1>Ortsleben</h1>
+                    <hr>
+                    <img src="img/Dorfladen.jpg" alt="ortsleben img">
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--News---------------------------------------------->
+
+    <section id="news">
+        <h1>News</h1>
+
+    </section>
     
+    
+    <!--Wissenwertes---------------------------------------------->
+
+    <section id="wissenwertes">
+        <h1>Wissenwertes</h1>
+
+    </section>
+
+    
+    <!--Vereine---------------------------------------------->
+
+    <section id="vereine">
+        <h1>Vereine</h1>
+
+    </section>
+
+
+    <!--Ortsleben---------------------------------------------->
+
+    <section id="ortsleben">
+        <h1>Ortsleben</h1>
+
+    </section>
+
+
+    <!--Kontakt/Lage---------------------------------------------->
+
+    <section id="kontakt">
+        <h1>Kontakt</h1>
+
+    </section>
+
 </body>
 </html>
