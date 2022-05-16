@@ -293,6 +293,25 @@ section {
     background-color: rebeccapurple;
 }
 
+#news .news1{
+    width: 500px;
+    height: 600px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+#news .news1 img {
+    width: 300px;
+    float: left;
+    margin-right: 10px;
+}
+
+#news .news1 p {
+    font-size: 20px;
+    text-align: left;
+}
+
+
 #wissenwertes {
     min-height: 100%;
     background-color: green;
