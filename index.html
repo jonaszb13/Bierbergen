@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="js/news_popup.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:700|Oswald:500|Rubik:300&amp;display=swap" rel="stylesheet">
     <title>Bierbergen</title>
 </head>
@@ -153,7 +156,8 @@
 
     </section>
 
-    <hr>
+    <hr id="homeHr">
+
 
     <!--News---------------------------------------------->
 
@@ -161,31 +165,52 @@
         <h1>News</h1>
             <div class="newsContainer1">
                 <div class="news">
-                    <img src="img/Dorfladen.jpg" alt="">
-                    <h2>News1</h2>
+                    <a class="trigger_popup_news_1">
+                        <img src="img/Dorfladen.jpg" alt="">
+                        <h2>News1</h2>
+                    </a>
+                    <div class="hover_text_news_1">
+                        <span class="helper"></span>
+                        <div>
+                            <div class="popupCloseButton">x</div>
+                            <h5>News 1 </h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores facilis id, sunt nam nulla commodi hic repellat? Totam excepturi dolore quam modi at reiciendis explicabo architecto ut animi iste. Dolorum amet est repudiandae, esse accusantium quos laudantium a, voluptas aliquid sunt corrupti, vel cumque? Inventore aperiam sit id facilis repellendus rerum ipsa eaque rem! Recusandae consectetur neque omnis tempora molestiae illum dolore quod, necessitatibus exercitationem cum! Et eveniet eos, minus nostrum quo rem excepturi dolor ipsa commodi ducimus laudantium tenetur perspiciatis optio fugiat accusamus fugit! Magni ex dolorem consequatur doloremque, recusandae eligendi laborum qui accusantium nostrum ab, quaerat excepturi suscipit nemo autem, vero quia assumenda cupiditate ullam molestiae! Iusto consequatur voluptates voluptas quibusdam nihil obcaecati at, optio animi reiciendis recusandae odio blanditiis, assumenda soluta nulla consectetur dolore excepturi? Excepturi nulla a fuga eum, fugit earum magnam quaerat modi sunt nesciunt rem error laboriosam, vel aperiam. Provident non omnis quisquam quae. Inventore alias eaque magni consequuntur qui molestias recusandae deserunt voluptates dolore nobis, animi mollitia nisi. Facere, rem, doloribus ratione veritatis eos neque eligendi obcaecati numquam aperiam, laborum illum ipsa! Vitae quae, inventore necessitatibus sint non nisi id hic perferendis sed! Optio maiores quibusdam voluptas velit molestiae aliquam tempore eum. Beatae, quasi fuga aperiam ab excepturi numquam veniam? Sequi eum voluptatem blanditiis deleniti. Doloremque ipsa, numquam eligendi consequatur, magni assumenda non quidem voluptatum facere pariatur quisquam! Molestiae numquam explicabo aperiam nobis fuga adipisci accusantium sapiente consequatur, omnis soluta ratione dolorum quae rerum enim laborum rem, neque aspernatur, magni illum. Iusto, voluptates? Ipsam cupiditate labore odit, excepturi consectetur illum impedit aperiam facere! Nam sed cumque impedit doloremque rem! Aspernatur doloribus repellat illum itaque temporibus eaque nihil iusto perferendis enim? Aliquam maiores illo delectus ipsam fuga veniam ratione ea, labore natus voluptate at fugit repellat sequi dolorem quos quia cum quis eveniet quaerat nesciunt dolore rem, architecto aut? Dolore omnis nulla labore pariatur. Aspernatur doloremque velit aliquam quas consectetur. Reiciendis dolor optio molestias magni tempora, neque inventore laudantium sequi autem nobis? Numquam, quae obcaecati est vitae beatae corporis ea quia dolores sunt soluta aspernatur velit excepturi facilis dignissimos possimus quibusdam culpa recusandae provident magnam? Praesentium, delectus voluptatibus saepe ab placeat quos dicta unde aspernatur. Quae consequuntur nihil quis quaerat quasi quam doloremque. Officiis inventore veniam voluptatem rem fugit molestias suscipit delectus quam ab veritatis ducimus aperiam at ipsam architecto perspiciatis temporibus, quod pariatur dolores repellendus. Unde laborum corporis suscipit ab nemo aut. Deleniti reiciendis corrupti voluptate, nostrum ex necessitatibus blanditiis tenetur, commodi nam illo similique nobis perspiciatis enim esse cumque ut dicta, tempora asperiores nesciunt. Quibusdam, aliquid quae pariatur accusamus porro adipisci quo? Laborum cumque quae consequuntur tempore ipsa amet. Eaque aspernatur ullam minus quisquam, quo quis illo laboriosam, suscipit iure cumque dignissimos asperiores dolore tenetur quasi voluptatem ratione accusamus? Nesciunt numquam temporibus, velit impedit atque amet ipsum consectetur delectus molestias aperiam dolore blanditiis doloribus optio aspernatur eum. Laudantium placeat beatae explicabo sit consectetur molestiae velit sunt ipsa vitae aut ratione quod, sed rem, suscipit sint animi mollitia possimus aliquam. Ratione, laudantium cupiditate.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="news">
-                    <img src="img/Dorfladen.jpg" alt="">
-                    <h2>News2</h2>
-                </div>
-                <div class="news">
-                    <img src="img/Dorfladen.jpg" alt="">
-                    <h2>News3</h2>
-                </div>
+                
+                <a class="trigger_popup_news_2">
+                    <div class="news">
+                        <img src="img/Dorfladen.jpg" alt="">
+                        <h2>News2</h2>
+                    </div>
+                </a>
+                <a class="trigger_popup_news_3">
+                    <div class="news">
+                        <img src="img/Dorfladen.jpg" alt="">
+                        <h2>News3</h2>
+                    </div>
+                </a>
             </div>
             <div class="newsContainer2">
-                <div class="news">
-                    <img src="img/Dorfladen.jpg" alt="">
-                    <h2>News4</h2>
-                </div>
-                <div class="news">
-                    <img src="img/Dorfladen.jpg" alt="">
-                    <h2>News5</h2>
-                </div>
-                <div class="news">
-                    <img src="img/Dorfladen.jpg" alt="">
-                    <h2>News6</h2>
-                </div>
+                <a class="trigger_popup_news_4">
+                    <div class="news">
+                        <img src="img/Dorfladen.jpg" alt="">
+                        <h2>News4</h2>
+                    </div>
+                </a>
+                <a class="trigger_popup_news_5">
+                    <div class="news">
+                        <img src="img/Dorfladen.jpg" alt="">
+                        <h2>News5</h2>
+                    </div>
+                </a>
+                <a class="trigger_popup_news_6">
+                    <div class="news">
+                        <img src="img/Dorfladen.jpg" alt="">
+                        <h2>News6</h2>
+                    </div>
+                </a>
             </div>
     </section>
     
